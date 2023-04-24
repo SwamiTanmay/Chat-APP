@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ChetnaTanmay"
         tools:targetApi="31">
         <activity
+            android:name=".ShowMessages"
+            android:exported="false" />
+        <activity
             android:name=".User_profile"
             android:exported="false" />
         <activity

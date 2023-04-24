@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class User_profile extends AppCompatActivity {
 
-    Button mHome, mSave_msg;
+    Button mHome, mSave_msg, mShow_msg;
 
     FirebaseAuth fAuth;
     DatabaseReference fRef;
@@ -45,6 +45,7 @@ public class User_profile extends AppCompatActivity {
         mHome = findViewById(R.id.home);
         mMessage = findViewById(R.id.message);
         mSave_msg = findViewById(R.id.save_msg);
+        mShow_msg = findViewById(R.id.show_msg);
 
         mSave_msg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,13 @@ public class User_profile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
+
+        mShow_msg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ShowMessages.class));
             }
         });
 

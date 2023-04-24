@@ -54,6 +54,17 @@
         app:layout_constraintTop_toBottomOf="@+id/message" />
 
     <Button
+        android:id="@+id/show_msg"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="112dp"
+        android:padding="15dp"
+        android:text="Show Msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_msg" />
+
+    <Button
         android:id="@+id/home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -65,6 +76,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save_msg" />
+        app:layout_constraintTop_toBottomOf="@+id/show_msg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
